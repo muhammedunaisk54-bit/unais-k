@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Unais K. | Full Stack Engineer</title>
+
+    <!-- === DEPENDENCIES === -->
+    <link href="css/output.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Local Fonts are imported in css/output.css via input.css -->
+
+</head>
+
+<body class="font-sans antialiased selection:bg-white selection:text-black">
+
+    <!-- Backgrounds -->
+    <canvas id="starfield"></canvas>
+    <div class="meteor-container" id="meteors">
+        <!-- Meteors injected by JS -->
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                    <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                    Muhammed Unais K.
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                    <a href="#about" class="text-secondary hover:text-white transition-colors">About</a>
+                    <a href="#work" class="text-secondary hover:text-white transition-colors">Work</a>
+                    <a href="#stack" class="text-secondary hover:text-white transition-colors">Stack</a>
+                    <a href="#contact"
+                        class="px-4 py-2 text-black bg-white hover:bg-gray-200 rounded-full transition-colors">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center pt-20 z-10 px-4">
+        <div class="max-w-4xl mx-auto text-center reveal active">
+
+            <!-- Badge -->
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 mb-8 text-xs font-medium text-secondary bg-white/5 border border-white/10 rounded-full backdrop-blur-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                Full Stack Engineer • Riyadh, KSA
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight text-glow">
+                Architecting secure <br>
+                financial infrastructure.
+            </h1>
+
+            <p class="text-xl text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
+                I build high-performance banking systems for institutions like
+                <span class="text-white border-b border-white/20">Riyad Bank</span> &
+                <span class="text-white border-b border-white/20">ANB</span>,
+                specializing in API design, Microservices, and DevOps modernization.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#work"
+                    class="px-8 py-3.5 text-sm font-semibold text-black bg-white hover:bg-gray-200 rounded-full transition-colors">
+                    View Projects
+                </a>
+                <a href="mailto:muhammedunais.k54@gmail.com"
+                    class="px-8 py-3.5 text-sm font-semibold text-white bg-white/5 border border-white/10 hover:bg-white/10 rounded-full transition-colors backdrop-blur-sm">
+                    muhammedunais.k54@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+            <span class="text-[10px] uppercase tracking-widest">Scroll</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section id="about" class="py-24 relative z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 reveal">
+                <h2 class="text-2xl font-semibold text-white">Experience & Expertise</h2>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[180px]">
+
+                <!-- Main Summary (Large) -->
+                <div
+                    class="md:col-span-2 md:row-span-2 magic-card rounded-3xl p-8 flex flex-col justify-between reveal">
+                    <div>
+                        <div
+                            class="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-6 text-white">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Software Engineer II</h3>
+                        <p class="text-secondary leading-relaxed text-sm">
+                            Currently at <strong>Alfaris International Group</strong>. I specialize in backend logic for
+                            high-volume processing (IPO/Bonds) and designing secure RESTful APIs. My focus is on
+                            reliability, achieving 99.9% uptime for banking modules using IBM WebSphere Liberty and Red
+                            Hat Linux.
+                        </p>
+                    </div>
+                    <div class="mt-6 flex gap-2">
+                        <span class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">3+
+                            Years Exp</span>
+                        <span class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">Backend
+                            Focus</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 1 -->
+                <div class="magic-card rounded-3xl p-6 flex flex-col justify-center items-center text-center reveal">
+                    <div class="text-4xl font-bold text-white mb-1">99.9%</div>
+                    <div class="text-xs text-secondary uppercase tracking-wider">Uptime</div>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="magic-card rounded-3xl p-6 flex flex-col justify-center items-center text-center reveal">
+                    <div class="text-4xl font-bold text-white mb-1">40%</div>
+                    <div class="text-xs text-secondary uppercase tracking-wider">Faster Deployments</div>
+                </div>
+
+                <!-- Tech Stack (Wide) -->
+                <div class="md:col-span-2 magic-card rounded-3xl p-8 flex flex-col justify-center reveal" id="stack">
+                    <h4 class="text-sm text-secondary uppercase tracking-wider mb-6">Core Stack</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">Java
+                            17</span>
+                        <span
+                            class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">Spring
+                            Boot</span>
+                        <span
+                            class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">Angular</span>
+                        <span
+                            class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">Docker</span>
+                        <span
+                            class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">CI/CD</span>
+                        <span
+                            class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">Oracle
+                            DB</span>
+                        <span
+                            class="px-3 py-1.5 text-sm text-white bg-white/5 border border-white/10 rounded-full">WebSphere</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-24 relative z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 reveal">
+                <h2 class="text-2xl font-semibold text-white">Featured Projects</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div class="magic-card rounded-3xl p-8 md:p-10 reveal group">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">
+                                    RB</div>
+                                <h3 class="text-xl font-bold text-white">Escrow Management System</h3>
+                            </div>
+                            <p class="text-secondary mb-6 leading-relaxed">
+                                Lead full-stack development for Riyad Bank's Phase 2 expansion. Implemented strategic
+                                financial modules including Corporate IPO, M&A, and General Escrow. Architected secure
+                                RESTful APIs to integrate with legacy core banking infrastructure.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">Java
+                                    Spring Boot</span>
+                                <span
+                                    class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">Angular</span>
+                                <span
+                                    class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">Oracle</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual representation (Code snippet) -->
+                        <div
+                            class="w-full md:w-1/3 bg-black/50 border border-white/10 rounded-xl p-4 font-mono text-xs text-gray-400 overflow-hidden relative">
+                            <div class="absolute top-0 right-0 p-2 text-white/20"><i class="fas fa-lock"></i></div>
+                            <div class="text-blue-400">@RestController</div>
+                            <div class="text-yellow-400">@RequestMapping(<span
+                                    class="text-green-400">"/api/v1/escrow"</span>)</div>
+                            <div class="mb-2">public class EscrowController {</div>
+                            <div class="pl-4 text-purple-400">@Autowired</div>
+                            <div class="pl-4 mb-2">private TransactionService service;</div>
+                            <div class="pl-4 text-gray-500">// Secure transaction logic</div>
+                            <div>}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="magic-card rounded-3xl p-8 md:p-10 reveal group">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">
+                                    ANB</div>
+                                <h3 class="text-xl font-bold text-white">VAT & Virtual Accounts</h3>
+                            </div>
+                            <p class="text-secondary mb-6 leading-relaxed">
+                                Built robust VAT file integration utility for Arab National Bank (ANB) using secure SFTP
+                                and IBM MQ protocols. Maintained critical banking modules including VA Collection and
+                                POBO (Pay On Behalf Of).
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">IBM
+                                    MQ</span>
+                                <span
+                                    class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">SFTP</span>
+                                <span
+                                    class="px-2 py-1 text-xs bg-white/5 rounded border border-white/10 text-secondary">OAuth2</span>
+                            </div>
+                        </div>
+                        <!-- Visual representation (Structure) -->
+                        <div class="w-full md:w-1/3 flex flex-col gap-2">
+                            <div
+                                class="h-8 w-full bg-white/5 border border-white/10 rounded flex items-center px-3 text-xs text-secondary">
+                                <i class="fas fa-file-invoice mr-2"></i> VAT_Data.xml
+                            </div>
+                            <div class="h-8 w-full border-l-2 border-dashed border-white/20 ml-4"></div>
+                            <div
+                                class="h-8 w-full bg-blue-500/10 border border-blue-500/20 rounded flex items-center px-3 text-xs text-blue-200">
+                                <i class="fas fa-server mr-2"></i> SFTP Secure Transfer
+                            </div>
+                            <div class="h-8 w-full border-l-2 border-dashed border-white/20 ml-4"></div>
+                            <div
+                                class="h-8 w-full bg-white/5 border border-white/10 rounded flex items-center px-3 text-xs text-secondary">
+                                <i class="fas fa-database mr-2"></i> Core Banking
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="py-20 border-t border-white/5 relative z-10 bg-black">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Ready to build something secure?</h2>
+
+            <div class="flex flex-col items-center gap-6">
+                <a href="mailto:muhammedunais.k54@gmail.com"
+                    class="text-lg text-secondary hover:text-white transition-colors">
+                    muhammedunais.k54@gmail.com
+                </a>
+
+                <div class="flex gap-6 text-2xl text-secondary">
+                    <a href="https://linkedin.com/in/muhammed-unais-k" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn" class="hover:text-white transition-colors"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub" class="hover:text-white transition-colors"><i
+                            class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white transition-colors"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="mt-20 text-xs text-gray-600">
+                &copy; 2024 Muhammed Unais K. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- === SCRIPTS === -->
+    <script>
+        // --- 1. Starfield Animation ---
+        const canvas = document.getElementById('starfield');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        let stars = [];
+
+        const initStars = () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            stars = [];
+            for (let i = 0; i < 200; i++) {
+                stars.push({
+                    x: Math.random() * width - width / 2,
+                    y: Math.random() * height - height / 2,
+                    z: Math.random() * width
+                });
+            }
+        };
+
+        const drawStars = () => {
+            ctx.fillStyle = "#000";
+            ctx.fillRect(0, 0, width, height);
+
+            ctx.fillStyle = "#fff";
+            stars.forEach(star => {
+                star.z -= 0.5; // Speed
+                if (star.z <= 0) {
+                    star.z = width;
+                    star.x = Math.random() * width - width / 2;
+                    star.y = Math.random() * height - height / 2;
+                }
+
+                const x = (star.x / star.z) * 100 + width / 2;
+                const y = (star.y / star.z) * 100 + height / 2;
+                const size = (1 - star.z / width) * 2.5; // Star size
+                const opacity = (1 - star.z / width);
+
+                if (x >= 0 && x <= width && y >= 0 && y <= height) {
+                    ctx.globalAlpha = opacity;
+                    ctx.beginPath();
+                    ctx.arc(x, y, size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            });
+            ctx.globalAlpha = 1;
+            requestAnimationFrame(drawStars);
+        };
+
+        window.addEventListener('resize', initStars);
+        initStars();
+        drawStars();
+
+        // --- 2. Magic Card Effect ---
+        const cards = document.querySelectorAll('.magic-card');
+        document.addEventListener('mousemove', e => {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // --- 3. Meteor Shower ---
+        const meteorContainer = document.getElementById('meteors');
+        const createMeteor = () => {
+            const meteor = document.createElement('div');
+            meteor.classList.add('meteor');
+
+            // Random positioning
+            const topPos = Math.random() * 100;
+            const leftPos = Math.random() * 100;
+            const delay = Math.random() * 5; // Random start delay
+
+            meteor.style.top = `${topPos}%`;
+            meteor.style.left = `${leftPos}%`;
+            meteor.style.animationDelay = `${delay}s`;
+
+            meteorContainer.appendChild(meteor);
+
+            // Cleanup
+            setTimeout(() => {
+                meteor.remove();
+            }, 6000 + (delay * 1000));
+        };
+
+        // Create meteors periodically
+        setInterval(createMeteor, 2000);
+        // Create initial batch
+        for (let i = 0; i < 3; i++) createMeteor();
+
+
+        // --- 4. Scroll Reveal ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
